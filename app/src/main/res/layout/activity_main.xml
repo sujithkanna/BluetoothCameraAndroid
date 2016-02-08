@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_chalk"
+    tools:context=".modules.main.MainActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/selection_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <com.example.bltcamera.commons.widgets.CTextView
+            android:id="@+id/activity_main_watch"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_80"
+            android:background="@drawable/rounded_corner_button"
+            android:gravity="center"
+            android:padding="@dimen/dp_10"
+            android:text="@string/simulate_as_watch"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_20"
+            app:typeface="roboto_medium" />
+
+        <com.example.bltcamera.commons.widgets.CTextView
+            android:id="@+id/activity_main_mobile"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_80"
+            android:layout_below="@+id/activity_main_watch"
+            android:layout_marginTop="@dimen/dp_20"
+            android:background="@drawable/rounded_corner_button"
+            android:gravity="center"
+            android:text="@string/as_mobile"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp_20"
+            app:typeface="roboto_medium" />
+    </RelativeLayout>
+
+
+    <com.example.bltcamera.commons.widgets.CTextView
+        android:id="@+id/bluetooth_not_avilable_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/activity_main_exit"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:text="@string/bluetooth_not_supported"
+        android:textColor="@color/dove_gray"
+        android:textSize="@dimen/dp_18"
+        android:visibility="gone"
+        app:typeface="roboto_medium" />
+
+    <com.example.bltcamera.commons.widgets.CTextView
+        android:id="@+id/activity_main_exit"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/red_button"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="Exit"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        app:typeface="roboto_medium" />
+
+</RelativeLayout>

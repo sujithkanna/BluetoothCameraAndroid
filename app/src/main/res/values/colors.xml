@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="dove_gray">#616161</color>
+    <color name="sunset_orange">#FF4F4F</color>
+
+    <color name="pearl_bush">#E8DAD1</color>
+    <color name="blue_chalk">#EEE5FF</color>
+    <color name="cerulean">#11B0DE</color>
+
+</resources>

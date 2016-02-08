@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CTextView">
+        <attr name="typeface" />
+    </declare-styleable>
+
+    <declare-styleable name="CEditText">
+        <attr name="typeface" />
+    </declare-styleable>
+
+
+    <attr name="typeface" format="enum">
+        <enum name="roboto_regular" value="0" />
+        <enum name="roboto_light" value="1" />
+        <enum name="roboto_medium" value="2" />
+        <enum name="roboto_bold" value="3" />
+    </attr>
+
+</resources>

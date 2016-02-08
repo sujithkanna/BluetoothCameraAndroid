@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/inflater_inapp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.example.bltcamera.commons.widgets.CTextView
+        android:id="@+id/bluetooth_not_avilable_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/inapp_enable"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:text="@string/bluetooth_not_enabled"
+        android:textColor="@color/dove_gray"
+        android:textSize="@dimen/dp_20"
+        app:typeface="roboto_medium" />
+
+    <com.example.bltcamera.commons.widgets.CTextView
+        android:id="@+id/inapp_enable"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp_20"
+        android:background="@drawable/blue_button"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="Enable"
+        android:textColor="@color/white"
+        app:typeface="roboto_medium" />
+
+</RelativeLayout>

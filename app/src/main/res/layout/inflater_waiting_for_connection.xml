@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.bltcamera.commons.widgets.CTextView
+        android:id="@+id/progress_message"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50"
+        android:gravity="center"
+        android:text="Waiting for connection..."
+        android:textColor="@color/dove_gray"
+        android:textSize="@dimen/dp_16"
+        app:typeface="roboto_regular" />
+
+    <com.example.bltcamera.commons.widgets.CTextView
+        android:id="@+id/progress_exit"
+        android:layout_width="@dimen/dp_70"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_message"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:background="@drawable/red_button"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:text="Exit"
+        android:textColor="@color/white" />
+
+    <View
+        android:id="@+id/dummy"
+        android:layout_below="@+id/progress_exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_20"/>
+
+</RelativeLayout>
